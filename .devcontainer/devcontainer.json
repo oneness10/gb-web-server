@@ -1,0 +1,9 @@
+{
+	"name": "gb-web-server project",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/app",
+	"settings": {
+		"editor.tabSize": 2
+	}
+}

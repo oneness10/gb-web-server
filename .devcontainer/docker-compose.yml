@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    image: gb-web-server/app:1.0
+    build: ./app
+    container_name: 'gb-web-server_app'
+    ports:
+      - '3002:3002'
+    stdin_open: true
+    tty: true
+    working_dir: /app
+    volumes:
+      - ../src:/app
+      - /app/node_modules
+  
+  # # 自動起動
+  # restart: always
+  # # 起動後に実行するコマンド
+  # command: npm install && npm start

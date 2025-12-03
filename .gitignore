@@ -1,0 +1,5 @@
+.env
+src/node_modules/
+src/temp/
+src/tmp/
+src/public/
